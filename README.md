@@ -41,7 +41,7 @@ cd eth-pool-docker-infra/redis
 7. Launch Pool container:
 
 ```
-cd eth-pool-docker-infra/pool/
+cd eth-pool-docker-infra/pool
 ./build-eth-pool-image.sh
 ./run-eth-pool.sh
 ```
@@ -61,7 +61,7 @@ NOTE: Please modify the IP and paths according to your setup!
 10. Launch Pool UI container:
 
 ```
-cd eth-pool-docker-infra/pool-ui/
+cd eth-pool-docker-infra/pool-ui
 ./build-pool-ui-image.sh
 ./run-pool-ui.sh
 ```
