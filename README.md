@@ -130,18 +130,17 @@ Create a `genesis.json` file with desirable blockchain initialization parameters
 }
 ```
 
-Initialize the private blockchain:
+Initialize the private blockchain node:
 
 ```
 geth --datadir ./data init ./genesis.json
 ```
 
+Start up the node:
+
 ```
 geth {{usual parameters}} --networkid 847283914
 ```
-
-We can permanently disable the built-in Ethereum mainnet bootnodes by commenting
-out (deleting) all of the `enode` URIs in the file `params/bootnodes.go` and rebuilding `geth`.
 
 5. How to launch a second `geth` node, and connect to your private network:
 
