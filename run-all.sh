@@ -1,20 +1,30 @@
 #!/usr/bin/env bash
 
-./geth/run-geth.sh
+cd ./geth
+./run-geth.sh
+sleep 4
+
+cd ../geth-02
+./run-geth.sh
+sleep 4
+
+cd ../redis
+./run-redis.sh
 sleep 3
 
-./redis/run-redis.sh
-sleep 3
-
-./pool/run-eth-pool.sh
+cd ../pool
+./run-eth-pool.sh
 sleep 2
 
-./pool-ui/run-pool-ui.sh
+cd ../pool-ui
+./run-pool-ui.sh
 sleep 2
 
-./pool-payouts/run-eth-pool-payouts.sh
+cd ../pool-payouts
+./run-eth-pool-payouts.sh
 sleep 2
 
-./redis-cmd/run-redis-cmd.sh
+cd ../redis-cmd
+./run-redis-cmd.sh
 
 exit 0
