@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-echo "Stopping geth"
+echo "Stopping redis-cmd"
 screen -S redis-cmd -X quit
