@@ -55,7 +55,6 @@ to build the UI found in the [README](https://github.com/sammy007/open-ethereum-
 
 ```
 rsync -avz -e 'ssh' ./dist root@94.247.132.203:/root/dev/eth-pool-docker-infra/pool-ui
-
 ```
 
 NOTE: Please modify the IP and paths according to your setup!
