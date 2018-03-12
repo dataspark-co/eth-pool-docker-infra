@@ -90,19 +90,19 @@ When done, you can use the shell scripts in the folder `eth-pool-docker-infra/re
 
 ## FAQ
 
-1. How to enable RPC access to geth from anywhere
+1. How to enable RPC access to geth from anywhere:
 
 ```
 geth {{usual parameters}} --rpc --rpcport 13270 --rpcaddr "0.0.0.0" --rpccorsdomain "*"
 ```
 
-2. How to create an account using `geth` CLI
+2. How to create an account using `geth` CLI:
 
 ```
 geth --datadir ./data account new
 ```
 
-3. How to unlock an account when `geth` launches
+3. How to unlock an account when `geth` launches:
 
 ```
 geth {{usual parameters}} --unlock "0xf5d6ecb770db5a3a9de21e2adc531befa6f2c551" --password passwd.txt
@@ -110,7 +110,7 @@ geth {{usual parameters}} --unlock "0xf5d6ecb770db5a3a9de21e2adc531befa6f2c551" 
 
 where `passwd.txt` is a text file containing the account's password.
 
-4. How to setup a private Ethereum test network
+4. How to setup a private Ethereum test network:
 
 We can permanently disable the built-in Ethereum mainnet bootnodes by commenting
 out (deleting) all of the `enode` URIs in the file `params/bootnodes.go` and rebuilding `geth`.
@@ -144,7 +144,7 @@ geth {{usual parameters}} --networkid 847283914
 We can permanently disable the built-in Ethereum mainnet bootnodes by commenting
 out (deleting) all of the `enode` URIs in the file `params/bootnodes.go` and rebuilding `geth`.
 
-5. How to launch a second `geth` node, and connect to your private network
+5. How to launch a second `geth` node, and connect to your private network:
 
 Create a copy of the folder `eth-pool-docker-infra/geth` (without the `data` folder, if it's located there).
 Initialize the blockchain, and then launch `geth` with the same command you used to launch the first private node,
