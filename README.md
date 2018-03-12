@@ -65,3 +65,23 @@ cd eth-pool-docker-infra/pool-ui
 ./build-pool-ui-image.sh
 ./run-pool-ui.sh
 ```
+
+11. Launch Pool Payouts module:
+
+```
+cd eth-pool-docker-infra/pool-payouts
+./build-eth-pool-payouts-image.sh
+./run-eth-pool-payouts.sh
+```
+
+12. Additionally, you can run [redis-commander](https://github.com/joeferner/redis-commander) to inspect the
+state of the Redis database. First install [Node.js](https://nodejs.org/), and then install `redis-commander`.
+When done, you can use the shell scripts in the folder `eth-pool-docker-infra/redis-cmd`:
+
+```
+# to start:
+./run-redis-cmd.sh
+
+# to stop:
+stop-redis-cmd.sh
+```
