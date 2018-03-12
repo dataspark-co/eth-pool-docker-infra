@@ -76,14 +76,14 @@
 	},
 
 	"unlocker": {
-		"enabled": false,
+		"enabled": true,
 		"poolFee": 1.0,
-		"poolFeeAddress": "",
+		"poolFeeAddress": "0xf5d6ecb770db5a3a9de21e2adc531befa6f2c551",
 		"donate": true,
 		"depth": 120,
 		"immatureDepth": 20,
 		"keepTxFees": false,
-		"interval": "10m",
+		"interval": "3m",
 		"daemon": "http://127.0.0.1:8545",
 		"timeout": "10s"
 	},
