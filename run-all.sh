@@ -4,10 +4,6 @@ cd ./geth
 ./run-geth.sh
 sleep 4
 
-cd ../geth-02
-./run-geth.sh
-sleep 4
-
 cd ../redis
 ./run-redis.sh
 sleep 3
