@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-docker ps --filter "name=redisdb" | grep -i "[e]th-pool-payouts" > /dev/null
+docker ps --filter "name=redisdb" | grep -i "[r]edisdb" > /dev/null
 exit_code=$?
 if [ $exit_code -eq 0 ]
 then
@@ -8,7 +8,7 @@ then
   docker stop redisdb > /dev/null
 fi
 
-docker ps -a --filter "name=redisdb" | grep -i "[e]th-pool-payouts" > /dev/null
+docker ps -a --filter "name=redisdb" | grep -i "[r]edisdb" > /dev/null
 exit_code=$?
 if [ $exit_code -eq 0 ]
 then
