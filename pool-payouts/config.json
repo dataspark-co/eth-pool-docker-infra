@@ -84,7 +84,7 @@
 		"immatureDepth": 20,
 		"keepTxFees": false,
 		"interval": "3m",
-		"daemon": "http://127.0.0.1:8545",
+		"daemon": "http://127.0.0.1:13270",
 		"timeout": "10s"
 	},
 
