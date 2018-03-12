@@ -1,0 +1,52 @@
+{
+	"threads": 2,
+	"coin": "eth",
+	"name": "main",
+
+	"proxy": {
+		"enabled": false
+	},
+
+	"api": {
+		"enabled": false
+	},
+
+	"upstreamCheckInterval": "5s",
+	"upstream": [
+		{
+			"name": "main",
+			"url": "http://127.0.0.1:13270",
+			"timeout": "10s"
+		}
+	],
+
+	"redis": {
+		"endpoint": "127.0.0.1:6379",
+		"poolSize": 10,
+		"database": 0,
+		"password": ""
+	},
+
+	"unlocker": {
+		"enabled": false
+	},
+
+	"payouts": {
+		"enabled": true,
+		"requirePeers": 1,
+		"interval": "5m",
+		"daemon": "http://127.0.0.1:13270",
+		"timeout": "10s",
+		"address": "0xf5d6ecb770db5a3a9de21e2adc531befa6f2c551",
+		"gas": "21000",
+		"gasPrice": "50000000000",
+		"autoGas": true,
+		"threshold": 500000000,
+		"bgsave": false
+	},
+
+	"newrelicEnabled": false,
+	"newrelicName": "MyEtherProxy",
+	"newrelicKey": "SECRET_KEY",
+	"newrelicVerbose": false
+}

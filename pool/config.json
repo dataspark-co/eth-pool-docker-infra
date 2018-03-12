@@ -30,18 +30,10 @@
 			"refreshInterval": "1m",
 
 			"banning": {
-				"enabled": false,
-				"ipset": "blacklist",
-				"timeout": 1800,
-				"invalidPercent": 30,
-				"checkThreshold": 30,
-				"malformedLimit": 5
+				"enabled": false
 			},
 			"limits": {
-				"enabled": false,
-				"limit": 30,
-				"grace": "5m",
-				"limitJump": 10
+				"enabled": false
 			}
 		}
 	},
@@ -76,30 +68,11 @@
 	},
 
 	"unlocker": {
-		"enabled": false,
-		"poolFee": 1.0,
-		"poolFeeAddress": "",
-		"donate": true,
-		"depth": 120,
-		"immatureDepth": 20,
-		"keepTxFees": false,
-		"interval": "10m",
-		"daemon": "http://127.0.0.1:8545",
-		"timeout": "10s"
+		"enabled": false
 	},
 
 	"payouts": {
-		"enabled": false,
-		"requirePeers": 25,
-		"interval": "120m",
-		"daemon": "http://127.0.0.1:8545",
-		"timeout": "10s",
-		"address": "0x0",
-		"gas": "21000",
-		"gasPrice": "50000000000",
-		"autoGas": true,
-		"threshold": 500000000,
-		"bgsave": false
+		"enabled": false
 	},
 
 	"newrelicEnabled": false,
