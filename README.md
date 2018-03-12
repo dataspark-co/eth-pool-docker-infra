@@ -155,7 +155,13 @@ geth {{usual parameters}} --port 42371 --rpcport 13271
 6. Summary. A full example of launching a private geth node (assuming all of the preparatory steps have been completed):
 
 ```
-geth --datadir ./data --networkid 847283914 --port 42370 --rpcport 13270 --rpc --cache=1024 --rpcaddr "0.0.0.0" --rpccorsdomain "*" --unlock "0xf5d6ecb770db5a3a9de21e2adc531befa6f2c551" --password passwd.txt
+geth \
+  --datadir ./data \
+  --networkid 847283914 \
+  --port 4237 \
+  --rpc --rpcport 13270 --rpcaddr "0.0.0.0" --rpccorsdomain "*" \
+  --unlock "0xf5d6ecb770db5a3a9de21e2adc531befa6f2c551" --password passwd.txt \
+  --cache=1024
 ```
 
 ## License
