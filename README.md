@@ -85,7 +85,7 @@ When done, you can use the shell scripts in the folder `eth-pool-docker-infra/re
 ./run-redis-cmd.sh
 
 # to stop:
-stop-redis-cmd.sh
+./stop-redis-cmd.sh
 ```
 
 ## FAQ
