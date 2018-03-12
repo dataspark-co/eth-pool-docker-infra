@@ -152,6 +152,12 @@ but use different parameters for `port` and `rpcport`:
 geth {{usual parameters}} --port 42371 --rpcport 13271
 ```
 
+6. Summary. A full example of launching a private geth node (assuming all of the preparatory steps have been completed):
+
+```
+geth --datadir ./data --networkid 847283914 --port 42370 --rpcport 13270 --rpc --cache=1024 --rpcaddr "0.0.0.0" --rpccorsdomain "*" --unlock "0xf5d6ecb770db5a3a9de21e2adc531befa6f2c551" --password passwd.txt
+```
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
